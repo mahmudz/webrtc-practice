@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B</title>
+</head>
+<body>
+    <div id="initializers">
+        <p>Remote SDP:</p>
+        <textarea id="remoteSDP" rows="10" style="width: 100%;"></textarea>
+        <button onclick="setRemoteDescription()">setRemoteDescription</button>
+        <button onclick="createAnswer()">createAnswer</button>
+
+        <p>My Answer:</p>
+        <textarea id="myAnswer" rows="10" style="width: 100%;"></textarea><br>
+    </div>
+
+    <div id="logger" style="display: none;">
+        <p>Connection established</p>
+        <ul id="msgs"></ul>
+
+        <br>
+        <input type="text" id="msg"><button onclick="sendMessage()">Send</button>
+    </div>
+</body>
+<script src="./B.js"></script>
+</html>
